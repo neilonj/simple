@@ -7,6 +7,6 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-express.get('/new',(req, res) =>
+router.get('/new',(req, res) =>
   res.send('WOAH'));
 module.exports = router;
