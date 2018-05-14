@@ -2,7 +2,6 @@ var express = require('express');
 
 
 const app = express();
-const PORT = 3000;
 
 // This is for the public folder on path /
 app.use(express.static('public'));
@@ -13,18 +12,6 @@ app.use('/images', express.static('images'));
 app.get('/', (req, res) =>
     res.send('duder'));
 
-app.post('/newItem', (req, res) =>
-    res.send(`a post request with /newItem route on port ${PORT}`)
-);
-
-app.put('/item', (req, res) =>
-    res.send(`a put request with /item route on port ${PORT}`)
-);
-
-app.delete('/item', (req, res) =>
-    res.send(`a delete request with /item route on port ${PORT}`)
-);
-
 app.listen(PORT, () => {
-    console.log(`Your server is running on port ${PORT}`);
+    console.log("blah");
 });
