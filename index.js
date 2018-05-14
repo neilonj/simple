@@ -12,6 +12,3 @@ app.use('/images', express.static('images'));
 app.get('/', (req, res) =>
     res.send('duder'));
 
-app.listen(PORT, () => {
-    console.log("blah");
-});
