@@ -1,4 +1,3 @@
-import data from '.\data\data.json';
 var express = require('express');
 var router = express.Router();
 
