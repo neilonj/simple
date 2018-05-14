@@ -5,6 +5,5 @@ import data from './data/MOCK_DATA.json';
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-router.post('/newitem', (req, res) =>
-  res.send(`a post request with /newitem route`));
+
 module.exports = router;
