@@ -1,4 +1,4 @@
-import data from './data/MOCK_DATA.json';
+import data from 'data.json';
 
 var express = require('express');
 var router = express.Router();
