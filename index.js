@@ -1,4 +1,4 @@
-import express from 'express';
+var express = require('express');
 
 
 const app = express();
@@ -11,9 +11,7 @@ app.use(express.static('public'));
 app.use('/images', express.static('images'));
 
 app.get('/', (req, res) =>
-    // get data first
-    
-);
+    res.send('duder'));
 
 app.post('/newItem', (req, res) =>
     res.send(`a post request with /newItem route on port ${PORT}`)
@@ -29,5 +27,4 @@ app.delete('/item', (req, res) =>
 
 app.listen(PORT, () => {
     console.log(`Your server is running on port ${PORT}`);
-    console.log(data);
 });

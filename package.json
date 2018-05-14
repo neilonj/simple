@@ -10,8 +10,6 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.16.0"
-  },
-  {
-  "license": "MIT"
+    "express": "4.16.0"
+  }
 }
